@@ -1,0 +1,28 @@
+{
+  "root": "apps/testing-showcase-e2e",
+  "sourceRoot": "apps/testing-showcase-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/testing-showcase-e2e/cypress.json",
+        "devServerTarget": "testing-showcase:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "testing-showcase:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/testing-showcase-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["testing-showcase"]
+}

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/name-to-age",
+  "sourceRoot": "libs/name-to-age/src",
+  "prefix": "ts",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/name-to-age"],
+      "options": {
+        "jestConfig": "libs/name-to-age/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/name-to-age/**/*.ts",
+          "libs/name-to-age/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

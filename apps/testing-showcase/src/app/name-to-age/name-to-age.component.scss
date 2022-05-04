@@ -1,0 +1,15 @@
+.age-result {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        height: 1.2rem;
+        width: min(350px, 50%);
+    }
+}

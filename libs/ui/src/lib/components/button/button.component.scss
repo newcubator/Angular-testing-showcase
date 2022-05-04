@@ -1,0 +1,32 @@
+.ts-btn {
+    margin-top: 1rem;
+
+    button {
+        background-color: rgba(51, 51, 51, 0.05);
+        border-radius: 8px;
+        border-width: 0;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 10px 12px;
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        &:enabled {
+            &:hover {
+                @extend .shadow;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+

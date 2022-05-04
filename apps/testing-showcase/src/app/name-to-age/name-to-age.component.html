@@ -1,0 +1,20 @@
+<div class="form-wrapper">
+    <form (ngSubmit)="onSubmit()"
+          [formGroup]="searchForm">
+        <div class="form-group">
+            <label for="search-name">Name</label>
+            <input id="search-name"
+                   data-testid="name"
+                   type="text"
+                   class="form-control"
+                   formControlName="name">
+        </div>
+        <ts-button [type]="'submit'" [label]="'Submit'" [disabled]="!searchForm.valid"></ts-button>
+    </form>
+
+    <ng-container *ngIf="age$ | async as age">
+        <div class="age-result">
+            {{ age }}
+        </div>
+    </ng-container>
+</div>
