@@ -9,12 +9,16 @@
                    class="form-control"
                    formControlName="name">
         </div>
-        <ts-button [type]="'submit'" [label]="'Submit'" [disabled]="!searchForm.valid"></ts-button>
+        <ts-button [type]="'submit'"
+                   [label]="'Submit'"
+                   [disabled]="!searchForm.valid"></ts-button>
     </form>
 
     <ng-container *ngIf="age$ | async as age">
         <div class="age-result">
-            {{ age }}
+            <p>
+                {{ age }}
+            </p>
         </div>
     </ng-container>
 </div>

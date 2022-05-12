@@ -17,8 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@ts/name-to-age": ["libs/name-to-age/src/index.ts"],
-      "@ts/ui": ["libs/ui/src/index.ts"],
-      "@ts/test": ["libs/test/src/index.ts"]
+      "@ts/test": ["libs/test/src/index.ts"],
+      "@ts/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
