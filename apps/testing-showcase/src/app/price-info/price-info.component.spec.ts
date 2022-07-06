@@ -65,7 +65,7 @@ describe('PriceInfoComponent', () => {
     });
 
     describe('Integration Test', () => {
-        let priceService: PriceService = new PriceService();
+        const priceService: PriceService = new PriceService();
         beforeEach(async () => {
             renderResult = await setup({
                 componentProviders: [
@@ -91,7 +91,7 @@ describe('PriceInfoComponent', () => {
 
     xdescribe('Let\'s go crazy', () => {
         let component: PriceInfoComponent;
-        let priceServiceSpy: Spy<PriceService> = createSpyFromClass(PriceService);
+        const priceServiceSpy: Spy<PriceService> = createSpyFromClass(PriceService);
 
         beforeEach(() => {
             component = new PriceInfoComponent(priceServiceSpy);
