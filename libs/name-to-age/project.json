@@ -1,6 +1,6 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "root": "libs/name-to-age",
   "sourceRoot": "libs/name-to-age/src",
   "prefix": "ts",
   "targets": {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { AgifyService } from '@ts/name-to-age';
 import { Observable } from 'rxjs';
 
@@ -9,13 +9,13 @@ import { Observable } from 'rxjs';
     styleUrls: ['./name-to-age.component.scss'],
 })
 export class NameToAgeComponent {
-    searchForm: FormGroup = this.formBuilder.group({
+    searchForm: UntypedFormGroup = this.formBuilder.group({
         name: ['', Validators.required]
     });
 
     age$?: Observable<number>;
 
-    constructor(private formBuilder: FormBuilder, private agifyService: AgifyService) {}
+    constructor(private formBuilder: UntypedFormBuilder, private agifyService: AgifyService) {}
 
     onSubmit() {
         this.age$ = this.agifyService.getAge(this.searchForm.get('name')!.value);
