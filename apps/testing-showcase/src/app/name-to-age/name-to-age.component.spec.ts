@@ -4,8 +4,8 @@ import { TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { render, screen } from '@testing-library/angular';
 import userEvent from '@testing-library/user-event';
-import { AgifyService, defaultResponse } from '../../../../../libs/name-to-age/src/index';
-import { ButtonModule } from '../../../../../libs/ui/src/index';
+import { AgifyService, defaultResponse } from '@ts/name-to-age';
+import { ButtonModule } from '@ts/ui';
 
 import { NameToAgeComponent } from './name-to-age.component';
 

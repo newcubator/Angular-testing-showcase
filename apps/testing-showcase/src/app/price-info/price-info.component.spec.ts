@@ -4,7 +4,7 @@ import { render, RenderComponentOptions, RenderResult, screen } from '@testing-l
 import userEvent from '@testing-library/user-event';
 import { createSpyFromClass, Spy } from 'jest-auto-spies';
 import { MockModule } from 'ng-mocks';
-import { ButtonModule } from '../../../../../libs/ui/src/index';
+import { ButtonModule } from '@ts/ui';
 
 import { PriceInfoComponent } from './price-info.component';
 import { PriceService } from './services/price.service';

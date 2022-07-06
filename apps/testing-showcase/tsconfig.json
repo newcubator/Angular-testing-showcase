@@ -26,9 +26,4 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "exclude": [
-    "test.ts",
-    "jest.config.ts",
-    "**/*.spec.ts"
-  ]
 }
