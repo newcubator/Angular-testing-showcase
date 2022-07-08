@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "name-to-age": "libs/name-to-age",
-    "testing-showcase": "apps/testing-showcase",
-    "testing-showcase-e2e": "apps/testing-showcase-e2e",
-    "ui": "libs/ui"
-  }
-}
