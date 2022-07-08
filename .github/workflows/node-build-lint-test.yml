@@ -21,9 +21,9 @@ jobs:
       - name: Lint code
         run: npm run lint
       - name: Test code
-        run: npm run test
+        run: npm run test:ci
       - name: Build project
-        run: npm run build
+        run: npm run build:ci
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1
