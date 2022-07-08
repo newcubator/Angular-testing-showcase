@@ -8,7 +8,9 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "lint": "nx lint"
+    "lint": "nx lint",
+    "build:ci": "ng build --prod --sourceMap=false --base-href /Angular-testing-showcase/",
+    "test:ci": "ng test --watch=false --code-coverage --source-map true"
   },
   "private": true,
   "dependencies": {
