@@ -21,6 +21,6 @@ export class NameToAgeComponent {
     ) {}
 
     onSubmit() {
-        this.age$ = this.agifyService.getAge(this.searchForm.get('name')!.value);
+        this.age$ = this.agifyService.getAge(this.searchForm.get('name')?.value ?? '');
     }
 }
