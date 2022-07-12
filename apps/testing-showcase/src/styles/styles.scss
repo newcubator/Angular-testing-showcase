@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
 html {
     -webkit-text-size-adjust: 100%;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -7,12 +10,10 @@ html {
     'Noto Color Emoji';
     line-height: 1.5;
     tab-size: 4;
-    height: 100%;
     scroll-behavior: smooth;
 }
 body {
-    height: 100%;
-    font-family: inherit;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     line-height: inherit;
     margin: 0;
 }

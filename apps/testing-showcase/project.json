@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/testing-showcase",
         "index": "apps/testing-showcase/src/index.html",
@@ -18,7 +20,10 @@
           "apps/testing-showcase/src/favicon.ico",
           "apps/testing-showcase/src/assets"
         ],
-        "styles": ["apps/testing-showcase/src/styles/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+          "apps/testing-showcase/src/styles/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +88,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/testing-showcase"],
+      "outputs": [
+        "coverage/apps/testing-showcase"
+      ],
       "options": {
         "jestConfig": "apps/testing-showcase/jest.config.ts",
         "passWithNoTests": true
