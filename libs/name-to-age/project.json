@@ -6,7 +6,9 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/name-to-age"],
+      "outputs": [
+        "coverage/libs/name-to-age"
+      ],
       "options": {
         "jestConfig": "libs/name-to-age/jest.config.ts",
         "passWithNoTests": true
