@@ -4,9 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
+    "analyze": "source-map-explorer dist/apps/testing-showcase/**/*.js",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
     "build": "nx build",
+    "build:prod:stats": "ng build --configuration production --sourceMap=true --stats-json",
     "test": "nx test",
     "lint": "nx lint",
     "build:ci": "ng build --prod --sourceMap=false --base-href /Angular-testing-showcase/",
@@ -61,6 +63,7 @@
     "ng-mocks": "^13.5.0",
     "nx": "14.4.2",
     "prettier": "2.7.1",
+    "source-map-explorer": "2.5.2",
     "ts-jest": "27.1.4",
     "ts-node": "10.8.2",
     "typescript": "4.7.4"
